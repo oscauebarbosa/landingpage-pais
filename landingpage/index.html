@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Futuro</title>
+</head>
+<body>
+    <header>
+            <img id="imglogo"  src="img/channels4_profile-removebg-preview.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="comoser.html">Como ser um piloto?</a></li>
+                    <li><a href="tech.html">Sobre a tecnologia</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div id="divespaco">
+        </div>
+        <div class="banner">
+            <h1>Bem-vindo a cidade de Birigui!</h1>
+            <p>Aqui encontrará tudo o que precisa saber sobre a nossa pérola</p>
+            <button>
+                <a href="http://www.birigui.sp.gov.br/birigui/home.php" id="buttoninsc" >Mais sobre</a>
+            </button>
+        </div>
+
+        <section class="mais-informacoes">
+            <div class="text">
+                <h2>Sobre a pérola</h2>
+                <br>
+                <p>Birigui é um município do estado de São Paulo, no Brasil, localizado no noroeste paulista. 
+                É servida pela rodovia Marechal Rondon, pela rodovia Gabriel Melhado e pela Estrada de Ferro 
+                Noroeste do Brasil. O município é formado somente pelo distrito sede, que inclui os povoados 
+                de Guatambu e Taquari.
+                </p>
+                <p>A cidade também é conhecida como “Cidade Pérola”, que se deu pela visita de um jornalista 
+                de São Paulo em 1934 após produzir uma crônica de aniversário do Senhor Roberto Clark, um dos
+                fundadores, contendo a expressão: “desta Pérola da Zona Noroeste”. Que posteriormente veio a 
+                ser conhecida nacionalmente e no exterior por “Capital Brasileira do Calçado Infantil” graças
+                ao crescimento da indústria de calçados, assim como veio a estimular as empresas, fornecedores,
+                produtores de maquinário, equipamentos e instituições voltadas a formação de mão de obra.</p>
+            </div>
+        </section>
+
+        <section class="td">
+            <div class="container">
+                <div class="text">
+                    <h2>Indicação de Procedência do Calçado Infantil de Birigui</h2>
+                    <br>
+                    <p>No dia 21 de março, foi reconhecida pelo INPI – Instituto Nacional de Propriedade Industrial a
+                        Indicação Geográfica do Calçado Infantil de Birigui, na espécie Indicação de Procedência (IP). A
+                        indicação de procedência (IP) valoriza e reconhece a procedência dos produtos/serviços e suas
+                        características únicas.
+                    </p>
+                    <br>
+                    <p>A IG do Calçado Infantil é a 101a IG brasileira registrada no INPI.
+                        O reconhecimento tem como finalidade proteger o nome geográfico, bem como promover a região
+                        e os produtores vinculados ao produto. Portanto, a indicação geográfica valoriza os produtores, o
+                        produto e o território.</p>
+                </div>
+                <div class="image">
+                <img src="img/a6-Industria-fabrica-producao-klin-3.webp" alt="Descrição da imagem">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="image">
+                <img src="caminho_da_imagem.jpg" alt="Descrição da imagem">
+                </div>
+                <div class="text">
+                <h2>Título do texto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur tortor et congue molestie.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-slide">
+                    <img src="imagem1.jpg" alt="Imagem 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="imagem2.jpg" alt="Imagem 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="imagem3.jpg" alt="Imagem 3">
+                </div>
+            </div>
+        </div>
+          
+        <div class="carousel-controls">
+            <button onclick="prevSlide()">Anterior</button>
+            <button onclick="nextSlide()">Próximo</button>
+        </div>
+          
+        <script>
+            const carouselInner = document.querySelector('.carousel-inner');
+            const slides = document.querySelectorAll('.carousel-slide');
+            let currentIndex = 0;
+            
+            function showSlide(index) {
+                carouselInner.style.transform = `translateX(-${index * 100}%)`;
+            }
+            
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                showSlide(currentIndex);
+            }
+            
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }
+            
+            showSlide(currentIndex);
+        </script>
+
+    </main>
+
+    <footer>
+        <div class="info">
+            <h2>Força Aérea Brasileira</h2>
+            <p>Avenida General Justo, 160 - Centro, Rio de Janeiro - RJ, CEP: 20021-130</p>
+            <p>Telefone: (21) 2101-5000</p>
+            <p>Mais sobre a FAB:</p>
+            <ul>
+              <li><a href="http://www.birigui.sp.gov.br/birigui/home.php">Informações</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
