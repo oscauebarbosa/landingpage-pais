@@ -53,7 +53,7 @@ nav a:hover {
 }
 
 #divespaco{
-    background-color: #1c1e2b;
+    background-color: #233081;
     height: 10px;
 }
 
@@ -97,7 +97,7 @@ nav a:hover {
 }
 
 .mais-informacoes {
-    background-color: #000000;
+    background-color: #002343;
     padding: 50px 100px;
     color: white;
     text-align: center;
@@ -133,7 +133,11 @@ nav a:hover {
 }
 
 .td{
-    background-color: #000000;
+    background-color: #1a60c1;
+}
+
+#container .image{
+    margin-left: 20px;
 }
 
 .container {
