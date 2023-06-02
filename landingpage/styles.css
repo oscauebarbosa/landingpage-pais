@@ -4,6 +4,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 header {
     background-color: #3333336f;
     color: #fff;
@@ -133,7 +137,7 @@ nav a:hover {
 }
 
 .td{
-    background-color: #1a60c1;
+    background-color: #e72479;
 }
 
 #container .image{
@@ -257,3 +261,6 @@ footer {
     border-bottom: 2px solid #fff;
 }
 
+.carousel {
+    overflow: hidden;
+}
